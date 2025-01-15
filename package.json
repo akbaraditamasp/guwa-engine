@@ -1,0 +1,39 @@
+{
+  "name": "guwa-engine",
+  "description": "GUWA Engine is whatsapp gateway application",
+  "module": "index.ts",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node-schedule": "^2.1.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hono/zod-validator": "^0.4.2",
+    "@inquirer/prompts": "^7.2.3",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@whiskeysockets/baileys": "^6.7.9",
+    "axios": "^1.7.9",
+    "commander": "^13.0.0",
+    "hono": "^4.6.16",
+    "jimp": "^1.6.0",
+    "link-preview-js": "^3.0.13",
+    "moment": "^2.30.1",
+    "node-schedule": "^2.1.1",
+    "p-throttle": "^7.0.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.33.5",
+    "sonic-boom": "^4.2.0",
+    "zod": "^3.24.1"
+  },
+  "scripts": {
+    "dev": "bun --hot run index.ts run",
+    "build": "bun build --compile ./index.ts"
+  }
+}
